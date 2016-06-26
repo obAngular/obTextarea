@@ -1,5 +1,5 @@
 # obTextarea
-An angular module to extract textarea's caret position in pixels
+An angular module to extract textarea's caret position in pixels. This is useful for textarea autocompletes like GitHub or Twitter.
 
 ##Get Started
 1. Clone [this](https://github.com/obAngular/obTextarea.git) repository</br>
@@ -30,7 +30,7 @@ An angular module to extract textarea's caret position in pixels
 <textarea data-ob-textarea></textarea>
 ```
 </br>
-4. On every key press / click / focues / ng-model change event the directive will emit to the parent scope an event with the new caret pixel position (one line under the caret). to capture it do the following in your controller </br>
+4. On every key press / click / focus / ng-model change event the directive will emit to its parent scope an event with the new caret pixel position (one line under the caret). to capture it do the following in your controller </br>
 ```js
 ...
 $scope.$on('obTextarea:caretChange', function (event, data) {
